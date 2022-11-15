@@ -27,3 +27,8 @@ Delete object files but also the compiled program.
 It will not affect the source code.
 
 `make fclean`
+
+## Notes
+
+The program use Backtracking Algorithm and get mid-high performance (compared with other 42 teams).
+Unlike most projects using Backtracking, it has the particularity to be designed with full iterative loops instead of recursive loops.
