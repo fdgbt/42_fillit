@@ -14,7 +14,7 @@
 
 static int		ft_check(t_tetri *current, char **grid, int size, t_point pos)
 {
-	int i;
+	int 		i;
 
 	i = 0;
 	if (pos.x == -1)
@@ -35,7 +35,7 @@ static int		ft_check(t_tetri *current, char **grid, int size, t_point pos)
 
 static void		ft_put(t_tetri *current, char **grid, t_point pos)
 {
-	int i;
+	int 		i;
 
 	i = 0;
 	while (i < 4)
@@ -47,7 +47,7 @@ static void		ft_put(t_tetri *current, char **grid, t_point pos)
 	}
 }
 
-static t_point	ft_nextcase(int size, t_point pos, int check)
+static t_point		ft_nextcase(int size, t_point pos, int check)
 {
 	if (pos.x == -1 || check == 2)
 	{
@@ -66,10 +66,10 @@ static t_point	ft_nextcase(int size, t_point pos, int check)
 	return (pos);
 }
 
-static t_point	ft_nextpos(t_tetri *last, char **grid, int size, t_point pos)
+static t_point		ft_nextpos(t_tetri *last, char **grid, int size, t_point pos)
 {
-	int i;
-	int offset;
+	int 		i;
+	int 		offset;
 
 	i = 0;
 	offset = 0;
@@ -90,9 +90,9 @@ static t_point	ft_nextpos(t_tetri *last, char **grid, int size, t_point pos)
 	return (pos);
 }
 
-int				ft_place(t_tetri *current, char **grid, int size, t_point pos)
+int			ft_place(t_tetri *current, char **grid, int size, t_point pos)
 {
-	int check;
+	int 		check;
 
 	while (current != NULL)
 	{
