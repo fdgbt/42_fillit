@@ -28,6 +28,10 @@ It will not affect the source code.
 
 `make fclean`
 
+## Usage
+
+./fillit [pieces_file]
+
 ## Notes
 
 The program use Backtracking Algorithm and get mid-high performance (compared with other 42 teams).
