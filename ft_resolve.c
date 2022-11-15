@@ -14,7 +14,7 @@
 
 static char		**ft_newgrid(int size)
 {
-	char	**grid;
+	char		**grid;
 	int		i;
 
 	if (!(grid = (char **)malloc(sizeof(char*) * (size + 1))))
@@ -34,7 +34,7 @@ static char		**ft_newgrid(int size)
 
 static void		ft_delgrid(char **grid)
 {
-	int i;
+	int 		i;
 
 	i = 0;
 	while (grid[i] != NULL)
@@ -48,8 +48,8 @@ static void		ft_delgrid(char **grid)
 
 static void		ft_printgrid(char **grid, int size)
 {
-	int x;
-	int y;
+	int 		x;
+	int 		y;
 
 	y = 0;
 	while (y < size)
@@ -71,10 +71,10 @@ static void		ft_printgrid(char **grid, int size)
 
 int				ft_resolve(t_tetri *first)
 {
-	int		size;
-	int		nb;
-	char	**grid;
-	t_point initgrid;
+	int			size;
+	int			nb;
+	char			**grid;
+	t_point 		initgrid;
 
 	initgrid.x = 0;
 	initgrid.y = 0;
