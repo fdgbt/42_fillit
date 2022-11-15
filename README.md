@@ -13,7 +13,7 @@ Create or update the Fill It program from sources.
 `make`
 
 ## Reinstall
-Regenerate completely the program.
+Recompile completely the program.
 
 `make re`
 
