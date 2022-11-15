@@ -40,9 +40,9 @@ static void		ft_cleanlist(t_tetri *first)
 
 static int		ft_readfile(char *file)
 {
-	int			fd;
-	int			ret;
-	int			end;
+	int		fd;
+	int		ret;
+	int		end;
 	char		buff[D_BUFFSIZE];
 
 	fd = 0;
@@ -67,7 +67,7 @@ static int		ft_readfile(char *file)
 	return (0);
 }
 
-int				main(int argc, char **argv)
+int			main(int argc, char **argv)
 {
 	t_tetri		*tetrilist;
 
