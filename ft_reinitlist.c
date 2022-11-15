@@ -12,7 +12,7 @@
 
 #include "fillit.h"
 
-static void		ft_reinitpoint(t_tetri *current)
+static void 		ft_reinitpoint(t_tetri *current)
 {
 	int 		xdiff;
 	int 		ydiff;
@@ -36,10 +36,10 @@ static void		ft_reinitpoint(t_tetri *current)
 	}
 }
 
-int				ft_reinitlist(t_tetri *first, char all)
+int			ft_reinitlist(t_tetri *first, char all)
 {
-	t_tetri			*current;
-	int			nb;
+	t_tetri		*current;
+	int		nb;
 
 	current = first;
 	nb = 0;
