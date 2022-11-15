@@ -21,30 +21,30 @@
 
 typedef unsigned char	t_byte;
 
-typedef struct			s_point
+typedef struct		s_point
 {
-	int	x;
-	int	y;
-}						t_point;
+	int		x;
+	int		y;
+}			t_point;
 
-typedef struct			s_tetri
+typedef struct		s_tetri
 {
-	int				id;
-	t_point			*p[4];
+	int		id;
+	t_point		*p[4];
 	struct s_tetri	*next;
 	struct s_tetri	*last;
-}						t_tetri;
+}			t_tetri;
 
-void					*ft_memset(void *s, int c, size_t n);
-void					ft_bzero(void *s, size_t n);
-void					ft_putchar(char c);
-void					ft_putstr(char const *s);
+void			*ft_memset(void *s, int c, size_t n);
+void			ft_bzero(void *s, size_t n);
+void			ft_putchar(char c);
+void			ft_putstr(char const *s);
 
-int						ft_checktetri(char *tetri);
-t_tetri					*ft_newlist(char *file);
-int						ft_place(t_tetri *current, char **grid,
-							int size, t_point pos);
-int						ft_reinitlist(t_tetri *first, char all);
-int						ft_resolve(t_tetri *first);
+int			ft_checktetri(char *tetri);
+t_tetri			*ft_newlist(char *file);
+int			ft_place(t_tetri *current, char **grid,
+					int size, t_point pos);
+int			ft_reinitlist(t_tetri *first, char all);
+int			ft_resolve(t_tetri *first);
 
 #endif
