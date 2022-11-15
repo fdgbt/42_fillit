@@ -14,7 +14,7 @@
 
 static int			ft_newpoint(char *tetri, t_tetri *new)
 {
-	t_point		*newpt;
+	t_point			*newpt;
 	int			n;
 	int			i;
 	int			j;
@@ -41,10 +41,10 @@ static int			ft_newpoint(char *tetri, t_tetri *new)
 	return (0);
 }
 
-static t_tetri		*ft_chaintetri(t_tetri *first, t_tetri *new)
+static t_tetri			*ft_chaintetri(t_tetri *first, t_tetri *new)
 {
-	t_tetri	*current;
-	int		id;
+	t_tetri			*current;
+	int			id;
 
 	id = 1;
 	if (first == NULL)
@@ -69,9 +69,9 @@ static t_tetri		*ft_chaintetri(t_tetri *first, t_tetri *new)
 	return (first);
 }
 
-static t_tetri		*ft_newtetri(char *tetri, t_tetri *first)
+static t_tetri			*ft_newtetri(char *tetri, t_tetri *first)
 {
-	t_tetri		*new;
+	t_tetri			*new;
 
 	if (!(new = (t_tetri *)malloc(sizeof(t_tetri))))
 		return (NULL);
@@ -84,8 +84,8 @@ t_tetri				*ft_newlist(char *file)
 {
 	int			fd;
 	int			ret;
-	char		buff[D_BUFFSIZE];
-	t_tetri		*first;
+	char			buff[D_BUFFSIZE];
+	t_tetri			*first;
 
 	first = NULL;
 	ft_bzero(buff, D_BUFFSIZE);
