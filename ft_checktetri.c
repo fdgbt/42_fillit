@@ -14,8 +14,8 @@
 
 static int		ft_countsharp(char *tetri)
 {
-	int index;
-	int nblock;
+	int 		index;
+	int 		nblock;
 
 	index = 0;
 	nblock = 0;
@@ -32,9 +32,9 @@ static int		ft_countsharp(char *tetri)
 
 static int		ft_checkformat(char *tetri)
 {
-	int index;
-	int endline;
-	int line;
+	int 		index;
+	int 		endline;
+	int		line;
 
 	index = 0;
 	line = 1;
@@ -61,7 +61,7 @@ static int		ft_checkformat(char *tetri)
 
 static int		ft_checkconnect(char *line, int index)
 {
-	int connect;
+	int 		connect;
 
 	connect = 0;
 	while (line[index] != '\n' && line[index] != '\0' && line[index] != '#')
@@ -83,10 +83,10 @@ static int		ft_checkconnect(char *line, int index)
 
 static int		ft_checkchain(char *tetri)
 {
-	int index;
-	int connect;
-	int nblock;
-	int core;
+	int 		index;
+	int 		connect;
+	int 		nblock;
+	int 		core;
 
 	index = 0;
 	nblock = 0;
@@ -110,9 +110,9 @@ static int		ft_checkchain(char *tetri)
 	return (1);
 }
 
-int				ft_checktetri(char *tetri)
+int			ft_checktetri(char *tetri)
 {
-	int end;
+	int 		end;
 
 	if (ft_countsharp(tetri) || ft_checkchain(tetri))
 		return (1);
