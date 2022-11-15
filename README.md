@@ -30,7 +30,7 @@ It will not affect the source code.
 
 ## Usage
 
-./fillit [pieces_file]
+`./fillit [pieces_file]`
 
 ## Notes
 
