@@ -14,9 +14,9 @@
 
 static void		ft_reinitpoint(t_tetri *current)
 {
-	int xdiff;
-	int ydiff;
-	int i;
+	int 		xdiff;
+	int 		ydiff;
+	int 		i;
 
 	xdiff = current->p[0]->x;
 	ydiff = current->p[0]->y;
@@ -38,7 +38,7 @@ static void		ft_reinitpoint(t_tetri *current)
 
 int				ft_reinitlist(t_tetri *first, char all)
 {
-	t_tetri		*current;
+	t_tetri			*current;
 	int			nb;
 
 	current = first;
