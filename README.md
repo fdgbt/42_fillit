@@ -30,7 +30,7 @@ It will not affect the source code.
 
 ## Usage
 
-`./fillit Tetriminos_Files/file_correct/valid_15`
+`./fillit Tetriminos/file_correct/valid_15`
 
 ## Notes
 
