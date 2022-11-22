@@ -33,6 +33,10 @@ It will not affect the source code.
 `./fillit Tetriminos/file_correct/valid_15`
 
 ## Notes
-
 The program use Backtracking Algorithm and get mid-high performance (compared with other 42 teams).  
 Unlike most projects using Backtracking, it has the particularity to be designed with full iterative loops instead of recursive loops.
+
+# Keywords
+Basic Algorithm (Backtracking)  
+Inputs/Outputs
+
